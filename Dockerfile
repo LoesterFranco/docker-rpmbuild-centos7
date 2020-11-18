@@ -7,7 +7,7 @@ USER root
 
 # Golang
 RUN yum -y update \
-  && yum -y install golang \
+  && yum -y install golang go-srpm-macros \
   && yum clean all \
   && rm -rf /var/cache/yum
 
